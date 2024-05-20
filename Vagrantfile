@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
   
   
-      
+   sudo apt install mysql-server  
    sudo apt install -y nginx
    sudo apt-get update
    
