@@ -17,12 +17,12 @@ Vagrant.configure("2") do |config|
    
   
  
-echo "-- Insertar datos de ejemplo en la tabla 'platos'" > /home/vagrant/datos_menu.sql
-echo "INSERT INTO datos_menu.platos (platoID, platoNombre, precioPlato ) VALUES" >> /home/vagrant/datos_menu.sql
-echo "(1, 'Ensalada', 5)," >> /home/vagrant/datos_menu.sql
-echo "(2, 'Escalopines', 10)," >> /home/vagrant/datos_menu.sql
-echo "(3, 'Lubina', 10)," >> /home/vagrant/datos_menu.sql
-echo "(4, 'Helado', 3)" >> /home/vagrant/datos_menu.sql
+echo "-- Insertar datos de ejemplo en la tabla 'menu'" > /home/vagrant/gestion_restaurante.sql
+echo "INSERT INTO gestion_restaurante.menu (IDplato, nombre, descripcion, precio, categoria ) VALUES" >> /home/vagrant/gestion_restaurante.sql
+echo "(1, 'Ensalada', 'Ensalada con pollo', 5, 'entrante')," >> /home/vagrant/gestion_restaurante.sql
+echo "(2, 'Escalopines', 'Escalopines al cabrales', 10, 'segundo')," >> /home/vagrant/gestion_restaurante.sql
+echo "(3, 'Lubina', 'Lubina al horno', 10, 'segunda opcion')," >> /home/vagrant/gestion_restaurante.sql
+echo "(4, 'Helado', 'Bombon de la ibense', 2, 'postre');" >> /home/vagrant/gestion_restaurante.sql
 
 
 
